@@ -1,0 +1,26 @@
+{
+  "name": "fwartner/maps",
+  "description": "A codeigniter library that has been modified a bit so that it's laravel friendly forked by fwartner",
+  "keywords": [
+    "laravel",
+    "phpgmaps",
+    "googlemaps",
+    "biostall"
+  ],
+  "authors": [
+    {
+      "name": "Florian Wartner",
+      "email": "mail@fwartner.de"
+        }
+  ],
+  "require": {
+    "php": ">=5.4.0",
+    "laravel/framework": "5.*"
+  },
+  "autoload": {
+    "psr-4": {
+      "Appitventures\\Phpgmaps\\": "src/Appitventures/Phpgmaps/"
+    }
+  },
+  "minimum-stability": "dev"
+}
