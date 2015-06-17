@@ -1070,14 +1070,14 @@ class Phpgmaps
                 if ($this->https) {
                     $apiLocation = 'https';
                 } else {
-                    $apiLocation = 'http';
+                    $apiLocation = 'https';
                 }
                 $apiLocation .= '://maps.googleapis.com/maps/api/js?key='.$this->apiKey.'&';
             } else {
                 if ($this->https) {
                     $apiLocation = 'https://maps-api-ssl';
                 } else {
-                    $apiLocation = 'http://maps';
+                    $apiLocation = 'https://maps-api-ssl';
                 }
                 $apiLocation .= '.google.com/maps/api/js?';
             }
@@ -1112,7 +1112,7 @@ class Phpgmaps
 
             if ($this->cluster) {
                 $this->output_js .= '
-			<script type="text/javascript" src="'.(($this->https) ? 'https' : 'http').'://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js"></script>
+			<script type="text/javascript" src="'.(($this->https) ? 'https' : 'https').'://google-maps-utility-library-v3.googlecode.com/svn/trunk/markerclusterer/src/markerclusterer_compiled.js"></script>
 			';
             }
         }
