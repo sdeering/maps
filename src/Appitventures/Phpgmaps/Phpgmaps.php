@@ -34,7 +34,7 @@ class Phpgmaps
     public $draggableCursor = '';                        // The name or url of the cursor to display on a draggable object
     public $draggingCursor = '';                        // The name or url of the cursor to display when an object is being dragged
     public $geocodeCaching = false;                    // If set to TRUE will cache any geocode requests made when an address is used instead of a lat/long. Requires DB table to be created (see documentation)
-    public $https = false;                    // If set to TRUE will load the Google Maps JavaScript API over HTTPS, allowing you to utilize the API within your HTTPS secure application
+    public $https = true;                    // If set to TRUE will load the Google Maps JavaScript API over HTTPS, allowing you to utilize the API within your HTTPS secure application
     public $navigationControlPosition = '';                        // The position of the Navigation control, eg. 'BOTTOM_RIGHT'
     public $infowindowMaxWidth = 0;                        // The maximum width of the infowindow in pixels. Expecting an integer without units
     public $keyboardShortcuts = true;                        // If set to FALSE will disable to map being controlled via the keyboard
